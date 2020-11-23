@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Mustang</title>
+</head>
+<body style="background-color: mediumseagreen;" onload="initApplication()"> 
+    
+    <div class="header">
+        <h1>Mustang 2</h1>
+        <h3>MUST CLICK ON "CLICK THIS TO START" TO WORK</h3>
+        <p id="statusID"></p>
+    <table>
+        
+        <tr>
+            <td>Name:</td>
+            <td>
+                <input id="nameID" type="text" value="" size="20">
+            </td>
+        </tr>
+        <tr>
+            <td>Last Name:</td>
+            <td>
+                <input id="lastNameID" type="text" value="" size="20">
+            </td>
+        </tr>
+
+        <tr>
+            <td>City:</td>
+            <td>
+                <form autocomplete="off" action="/action_page.php">
+                    <div class="autocomplete" style="width:300px;">
+                      <input id="myInput" type="text" name="myCity" placeholder="City">
+                    </div>
+                    
+                  </form>
+            </td>
+        </tr>
+
+        <tr>
+            <td>State:</td>
+            <td>
+                <input id="stateID" type="text" value="" size="20">
+            </td>
+        </tr>
+        <tr>
+            <td>ZIP:</td>
+            <td>
+                <form autocomplete="off" action="/action_page.php">
+                    <div class="autocomplete" style="width:300px;">
+                      <input id="myZip" type="text" name="myZip" placeholder="Zip">
+                    </div>
+                    
+                  </form>
+            </td>
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td>
+                <input id="emailID" type="text" value="" size="20">
+            </td>
+        </tr>
+        <tr>
+            <td><button type="button" onclick="previous()">Previous</button></td>
+            <td><button type="button" onclick="next()">Next</button></td>
+        </tr>
+
+        <tr>
+            <td><button type="button" onclick="add()">New</button></td>
+            <td><button type="button" onclick="remove()">Delete</button></td>
+        </tr>
+        <p id="statusID"></p>
+
+
+    </table>
+    <button onclick="loadContacts()">Click This to Start</button><br>
+    <p id="contactsID"></p>
+    
+
+</div>
+    
+    <button onclick="loadIndex()">Get Index</button><br>
+        <p id="indexID" visibility: hidden></p>
+
+    
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
